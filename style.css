@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #1C1740;
+    background-image: url(img/bg.png);
+    
+
+    
+}
+header {
+    display: flex;
+    height: rem(100);
+    width: rem(1680);
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    padding: 20px 200px 20px 200px;
+    justify-content: space-between;
+
+}
+nav {
+    height: rem(24);
+    width: rem(421);
+    left: rem(1059);
+    top: rem(38);
+}
+ul {
+    display: flex;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: rem(24);
+    list-style: none;
+    width: rem(421);
+    justify-content: space-between;
+    gap: 22px;
+}
+ul a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    height: 24px;
+    width: 125px;
+}
+ul a:hover {
+    font-weight: normal;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #1C1740;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+} 
+li {
+    padding-bottom: 15px;
+}
+
+.product:hover .submenu {
+    display: block;
+  }
+main {
+    border-top: 1px solid #cccccc;
+    display: flex;
+    width: rem(1680);
+    padding: 70px 200px 20px 200px;
+    height: 70vh;
+    justify-content: space-between;
+    align-items: center;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: rem(497);
+    height: rem(378);
+
+}
+h1 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 84px;
+    /* or 120% */
+    letter-spacing: -0.03em;
+    color: white;
+}
+p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+    color: #CBD2DD;
+}
+@media screen (max-width: 768px){
+    main {
+        border-top: 1px solid #cccccc;
+        display: flex;
+        width: rem(1680);
+        padding: 70px 200px 20px 200px;
+        height: 70vh;
+        justify-content: center;
+        flex-direction: column;
+        }
+}
