@@ -6,9 +6,6 @@
 body {
     background: #1C1740;
     background-image: url(img/bg.png);
-    
-
-    
 }
 header {
     display: flex;
@@ -22,10 +19,10 @@ header {
 
 }
 nav {
-    height: rem(24);
-    width: rem(421);
-    left: rem(1059);
-    top: rem(38);
+    height: 24px;
+    width: 421px;
+    left: 1059px;
+    top: 38px;
 }
 ul {
     display: flex;
@@ -35,7 +32,7 @@ ul {
     font-size: 16px;
     line-height: rem(24);
     list-style: none;
-    width: rem(421);
+    width: 421px;
     justify-content: space-between;
     gap: 22px;
 }
@@ -55,6 +52,7 @@ ul a:hover {
     background-color: #1C1740;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
+    width: 120px;
     z-index: 1;
 } 
 li {
@@ -68,8 +66,8 @@ main {
     border-top: 1px solid #cccccc;
     display: flex;
     width: rem(1680);
-    padding: 70px 200px 20px 200px;
-    height: 70vh;
+    padding: 250px 0px 0px 200px;
+    height: 80vh;
     justify-content: space-between;
     align-items: center;
 }
@@ -80,8 +78,8 @@ section {
     align-items: flex-start;
     padding: 0px;
     gap: 30px;
-    width: rem(497);
-    height: rem(378);
+    width: 497px;
+    height: 378px;
 
 }
 h1 {
@@ -103,14 +101,91 @@ p {
     /* or 178% */
     color: #CBD2DD;
 }
-@media screen (max-width: 768px){
+.phone {
+    width: 600px;
+}
+@media screen and (max-width: 800px){
+    header {
+        display: flex;
+        flex-direction: column;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px;
+        justify-content: center;
+        height: 200px;
+        padding: 0px 0px 0px 100px;
+
+    
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: rem(24);
+        list-style: none;
+        width: 421px;
+        justify-content: center;
+        gap: 22px;
+    }
+    ul a {
+        text-decoration: none;
+        display: block;
+        color: white;
+        height: 24px;
+        width: 125px;
+    }
+    li:first-child {
+        padding-top: 50px;
+    }
+    li:nth-child(2) {
+        display: none;
+    }
+    li {
+        padding-bottom: 15px;
+    }
     main {
         border-top: 1px solid #cccccc;
         display: flex;
-        width: rem(1680);
-        padding: 70px 200px 20px 200px;
-        height: 70vh;
-        justify-content: center;
         flex-direction: column;
-        }
+        justify-content: center;
+        padding: 600px 0px 0px 150px;
+
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        width: 497px;
+        height: 378px;
+    
+    }
+    h1 {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 84px;
+        /* or 120% */
+        letter-spacing: -0.03em;
+        color: white;
+    }
+    p {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        /* or 178% */
+        color: #CBD2DD;
+    }
+    .phone {
+        width: 400px;
+        padding-top: 100px;
+    }
 }
